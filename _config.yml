@@ -1,0 +1,41 @@
+title: 无数渺小的思考，填满了人的一生
+description: lin's Blog
+
+url: https://defineYIDA.github.io
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: Articles
+   url: /articles
+# - title: Articles (中文)
+#   url: /articles-zh
+ - title: Categories
+   url: /categories
+ - title: About
+   url: /about
+
+social:
+   github: defineYIDA
+#   email: define_yida@qq.com
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      comments: false
+
+google_analytics: "UA-89960542-1"
+
+# development configurations
+host: 0.0.0.0
