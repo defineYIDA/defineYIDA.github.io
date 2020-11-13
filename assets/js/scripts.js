@@ -12,7 +12,14 @@ $( document ).ready(function() {
     $(".time").text(function (index, value) {
       return Math.round(parseFloat(value));
     });
-
+    //按照时间设置首页图片
+    var myDate = new Date();
+    hour= myDate.getHours(); //0-23
+    var header = document.getElementById('header');
+    var temp = 3
+    if (temp != 0) {
+      header.style.backgroundImage = "url(\"assets/img/touring" +temp.toString() +".jpg\")"
+    }
 });
 
 
