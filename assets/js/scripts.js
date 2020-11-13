@@ -16,7 +16,7 @@ $( document ).ready(function() {
     var myDate = new Date();
     hour= myDate.getHours(); //0-23
     var header = document.getElementById('header');
-    var temp = 3
+    var temp = hour % 5
     if (temp != 0) {
       header.style.backgroundImage = "url(\"assets/img/touring" +temp.toString() +".jpg\")"
     }
