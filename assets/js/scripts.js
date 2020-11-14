@@ -18,7 +18,7 @@ $( document ).ready(function() {
     var header = document.getElementById('header');
     var temp = hour % 5
     if (temp != 0) {
-      header.style.backgroundImage = "url(\"assets/img/touring" +temp.toString() +".jpg\")"
+      header.style.backgroundImage = "url(\"../assets/img/touring" +temp.toString() +".jpg\")"
     }
 });
 
