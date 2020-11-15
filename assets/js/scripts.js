@@ -17,8 +17,13 @@ $( document ).ready(function() {
     hour= myDate.getHours(); //0-23
     var header = document.getElementById('header');
     var temp = hour % 5
-    if (temp != 0) {
-      header.style.backgroundImage = "url(\"../assets/img/touring" +temp.toString() +".jpg\")"
+    if (temp !== 0) {
+        if (window.document.location.href.search("blog")) {
+            header.style.backgroundImage = "url(\"../../assets/img/touring" +temp.toString() +".jpg\")";
+        }
+        else {
+            header.style.backgroundImage = "url(\"../assets/img/touring" +temp.toString() +".jpg\")";
+        }
     }
 });
 

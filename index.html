@@ -14,7 +14,7 @@ title: Lin's Blog
         {% if post.description %}
           {{ post.description | strip_html | strip_newlines | truncate: 250 }}
         {% else %}
-          {{ post.content | strip_html | strip_newlines | truncate: 250 }}
+          {{ post.content | strip_html | strip_newlines | truncate: 100 }}
         {% endif %}
         </p>
       </li>
