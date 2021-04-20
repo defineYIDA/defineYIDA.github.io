@@ -34,17 +34,19 @@ layout: default
     {% endif %} 
   </div>
 </div>
-<div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script>
-var gitment = new Gitment({
-    owner: 'defineYIDA',
-    repo: 'defineYIDA.github.io',
-    oauth: {
-        client_id: '3955a131c3d6be834a2b',
-        client_secret: '76028ad9254543c8a378b0cac0a9ec0085ee3aa8',
-    },
-});
-gitment.render('gitmentContainer');
+var gitalk = new Gitalk({
+  clientID: '3955a131c3d6be834a2b',
+  clientSecret: '76028ad9254543c8a378b0cac0a9ec0085ee3aa8',
+  repo: 'defineYIDA.github.io',
+  owner: 'defineYIDA',
+  admin: ['defineYIDA'],
+  id: 'lin_blog',      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+
+gitalk.render('gitalk-container')
 </script>
