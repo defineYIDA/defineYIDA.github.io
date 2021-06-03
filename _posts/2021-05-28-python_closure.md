@@ -3,6 +3,7 @@ layout: post
 title:  "Python 闭包的实现原理——对closure和callback的分析"
 date:   2021-5-28
 categories: python
+description: 在Python对于闭包的实现中，闭包关联的环境为一个变量环境，也就是一个引用外部变量的集合（`co_freevars`），这些变量被称为自由变量（`free_variable`），自由变量是函数使用到的外层作用域中的变量。
 ---
 * TOC
 {:toc}
