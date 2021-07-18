@@ -3,7 +3,7 @@ layout: post
 title:  "分布式ID生成方案对比"
 date:   2021-7-17
 categories: 分布式
-description: 
+description: 分布式id生成的多种方案对比，以及数据库自增id到无序id的生成方案
 ---
 ## 概述
 在各种业务场景中总会出现需求用id去标识一个玩家、一件物品或者一个订单，需确保这个id在整个系统中不重复，做到全局唯一。  
