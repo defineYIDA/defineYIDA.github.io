@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ArcGIS 软件使用"
+title:  "ArcGIS 软件应用"
 date:   2018-05-15
 categories: ArcGIS
 ---
