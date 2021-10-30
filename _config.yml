@@ -35,7 +35,7 @@ defaults:
     values:
       comments: false
 
-google_analytics: ""
+google_analytics: "G-9VWLR1YFPK"
 
 # development configurations
 host: 0.0.0.0
